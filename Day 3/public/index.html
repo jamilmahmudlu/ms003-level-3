@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="md-stepper-horizontal orange">
+        <div class="md-step active" id="step-1">
+          <div class="md-step-circle"><span>1</span></div>
+          <div class="md-step-title">Subjects</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step" id="step-2">
+          <div class="md-step-circle"><span>2</span></div>
+          <div class="md-step-title">Questions</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step" id="step-3">
+          <div class="md-step-circle"><span>3</span></div>
+          <div class="md-step-title">Answers</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step" id="step-4">
+          <div class="md-step-circle"><span>4</span></div>
+          <div class="md-step-title">Exam Page</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+      </div>
+      <div class="screens">
+        <div class="screen" id="screen-1">
+            <div class="container mt-4">
+                <div class="row mx-0">
+                    <div class="col-12 text-center">
+                      <h3>Subjects</h3>
+                    </div>
+                  </div>
+                  <div class="row mt-3 mx-0 border-bottom border-3">
+                    <div class="col-3 d-grid">
+                      <button
+                        class="btn btn mb-3 btn-outline-warning"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#subjectAddEditModal"
+                        id="btnSubjectAdd"
+                      >
+                        Add
+                      </button>
+                    </div>
+                    <div class="col-3 offset-6">
+                      <input
+                        type="text"
+                        id="txtSubjectSearch"
+                        placeholder="Search..."
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mx-0 mt-3">
+                    <div class="col-12">
+                      <table
+                        id="tblSubject"
+                        class="table table-striped table-hover table-bordered"
+                      >
+                        <thead class="table-warning text-center">
+                          <tr>
+                            <th colspan="2"></th>
+                            <th>ID</th>
+                            <th>Name</th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                      </table>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="screen" id="screen-2">
+            <h2>Screen 2</h2>
+        </div>
+        <div class="screen" id="screen-3">
+            <h2>Screen 3</h2>
+        </div>
+        <div class="screen" id="screen-4">
+            <h2>Screen 4</h2>
+        </div>
+      </div>
+      <div
+      class="modal fade"
+      id="subjectAddEditModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="subjectAddEditModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <input type="hidden" id="hfSubjectId" />
+          <div class="modal-header d-flex justify-content-center">
+            <h1 class="modal-title fs-5" id="subjectAddEditModalLabel">
+              Subject
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row mx-0 mt-3">
+              <div class="col-6">
+                <label for="txtSubjectName">Name:</label>
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" id="txtSubjectName" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              id="btnSubjectSave"
+            >
+              Save
+            </button>
+            <button
+              type="button"
+              id="btnSubjectModalClose"
+              data-bs-dismiss="modal"
+              class="btn btn-outline-warning"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+      <script src="../bundles/bundle.js"></script>
+</body>
+</html>

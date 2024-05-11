@@ -1,0 +1,28 @@
+{
+  "abouts": [
+    {
+      "id": "1",
+      "name": "Sergey",
+      "surname": "Kuznetsov",
+      "age": 25,
+      "city": "Moscow",
+      "country": "Russia"
+    },
+    {
+      "id": "1",
+      "name": "Sergey",
+      "surname": "Kuznetsov",
+      "age": 25,
+      "city": "Moscow",
+      "country": "Russia"
+    },
+    {
+      "id": "3",
+      "name": "ahssagajsgaj",
+      "surname": "Kuznetsov",
+      "age": 25,
+      "city": "Moscow",
+      "country": "Russia"
+    }
+  ]
+}

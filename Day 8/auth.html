@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <section id="form">
+        <div id="toggle-forms">
+            <button class="waves-effect waves-light active" id="login">Login</button>
+            <button class="waves-effect waves-light" id="register">Register</button>
+        </div>
+        <form class="col s12">
+            <div class="row center-align">
+                <h4 class="white-text">login</h4>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="loginemail" type="email" class="validate">
+                    <label for="loginemail">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="loginpassword" type="password" class="validate">
+                    <label for="loginpassword">Password</label>
+                </div>
+            </div>
+            <div class="row center-align">
+                <button class="btn waves-effect waves-light">
+                    Login
+                </button>
+            </div>
+									<p class="forgot">Forgot Password?</p>
+            <ul class="animate">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </form>
+        <form class="col s12" id="formRegister">
+            <div class="row center-align">
+                <h4 class="white-text">register</h4>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="fullname" type="text" class="validate">
+                    <label for="fullname">Full name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="username" type="text" class="validate">
+                    <label for="username">Username</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="password" type="text" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+
+            <div class="row center-align">
+                <button class="btn waves-effect waves-light">
+                    Register
+                </button>
+            </div>
+            <ul class="animate">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </form>
+    </section>
+
+    <script>
+        let $id = (id) => document.getElementById(id);
+        var [login, register, form] = ['login', 'register', 'form'].map(id => $id(id));
+
+        [login, register].map(element => {
+            element.onclick = function () {
+                [login, register].map($ele => {
+                    $ele.classList.remove("active");
+                });
+                this.classList.add("active");
+                this.getAttribute("id") === "register"?  form.classList.add("active") : form.classList.remove("active");
+            }
+        });
+    </script>
+
+    <script src="auth.js"></script>
+</body>
+</html>
