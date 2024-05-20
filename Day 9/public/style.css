@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    padding: 1em;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    width: 25%;
+}
+
+.header-right{
+    display: flex;
+    justify-content: end;
+    width: 75%;
+}
+
+.header-right ul{
+    display: flex;
+    list-style: none;
+}
+
+.header-right ul li{
+    padding: 12px 6px;
+}
+
+.header-right ul li a{
+    text-decoration: none;
+    color: red;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 30px 0px;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+footer div span {
+    color: red;
+    font-size: 30px;
+}

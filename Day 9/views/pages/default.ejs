@@ -1,0 +1,12 @@
+<%- include(rootPath + '/views/layout/header.ejs') %>
+
+<h1><%= myRandomText %></h1>
+<br>
+<ul>
+    <% categories.forEach(element => { %>
+     <li>  <%= element.name  %> </li>
+    <% }) %>
+    
+</ul>
+
+<%- include(rootPath + '/views/layout/footer.ejs') %>

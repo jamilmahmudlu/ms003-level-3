@@ -1,0 +1,50 @@
+<%- include(rootPath + '/views/layout/header.ejs') %>
+
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">
+            <h3>Register page</h3>
+        </div>
+    </div>
+    <div class="card-body">
+        <form action="/register/user" method="post">
+        <div class="row mx-0">
+            <div class="col-12">
+                <a href="/register">Brand</a>
+            </div>
+        </div>
+        <div class="row mx-0">
+            <div class="col-3">
+                <label for="myUsername">Username</label>
+            </div>
+            <div class="col-9">
+                <input type="text" class="form-control" id="myUsername">
+            </div>
+        </div>
+        <div class="row mx-0">
+            <div class="col-3">
+                <label for="myEmail">Email</label>
+            </div>
+            <div class="col-9">
+                <input type="text" class="form-control" id="myEmail">
+            </div>
+        </div>
+        <div class="row mx-0">
+            <div class="col-3">
+                <label for="myPassword">Password</label>
+            </div>
+            <div class="col-9">
+                <input type="text" class="form-control" id="myPassword">
+            </div>
+        </div>
+        <div class="row mx-0">
+            <div class="col-12">
+                <input type="submit" value="Login" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+
+<%- include(rootPath + '/views/layout/footer.ejs') %>

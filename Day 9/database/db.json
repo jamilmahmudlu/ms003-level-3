@@ -1,0 +1,7 @@
+{
+    "categories": [
+        {"id": 1, "name": "Tablet"},
+        {"id": 2, "name": "Laptopppp"},
+        {"id": 3, "name": "Phone"}
+    ]
+}
