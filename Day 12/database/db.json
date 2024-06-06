@@ -1,0 +1,76 @@
+{
+  "logs": [
+    {
+      "informations": {
+        "date": 1717088838313,
+        "url": "/",
+        "method": "GET",
+        "status": null
+      }
+    },
+    {
+      "informations": {
+        "date": 1717088839047,
+        "url": "/",
+        "method": "GET",
+        "status": null
+      }
+    },
+    {
+      "informations": {
+        "date": 1717088869135,
+        "url": "/",
+        "method": "GET",
+        "status": null
+      }
+    },
+    {
+      "informations": {
+        "date": 1717088879309,
+        "url": "/about",
+        "method": "GET",
+        "status": null
+      }
+    },
+    {
+      "informations": {
+        "date": 1717088880454,
+        "url": "/about",
+        "method": "GET",
+        "status": null
+      }
+    },
+    {
+      "informations": {
+        "date": 1717088885599,
+        "url": "/about",
+        "method": "GET",
+        "status": null
+      }
+    },
+    {
+      "informations": {
+        "date": 1717088915746,
+        "url": "/about",
+        "method": "GET",
+        "status": null
+      }
+    },
+    {
+      "informations": {
+        "date": 1717088976016,
+        "url": "/about",
+        "method": "GET",
+        "status": null
+      }
+    },
+    {
+      "informations": {
+        "date": 1717089201869,
+        "url": "/about",
+        "method": "GET",
+        "status": null
+      }
+    }
+  ]
+}
